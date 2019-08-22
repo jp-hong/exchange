@@ -48,12 +48,12 @@ class ExchangeDaum(base):
     CASH_SELLING_PRICE = Column(Float, nullable=False)
 
     def __init__(self, country, cname, bprice, cprice, cbprice, csprice):
-        self.country = country
-        self.cname = cname
-        self.bprice = bprice
-        self.cprice = cprice
-        self.cbprice = cbprice
-        self.csprice = csprice
+        self.COUNTRY = country
+        self.CURRENCY_NAME = cname
+        self.BASE_PRICE = bprice
+        self.CHANGE_PRICE = cprice
+        self.CASH_BUYING_PRICE = cbprice
+        self.CASH_SELLING_PRICE = csprice
                      
     def __repr__(self):
         return "<ExchangeDaum {}, {}>".format(self.country, self.cname)  
