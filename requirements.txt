@@ -1,0 +1,6 @@
+requests
+fake_useragent
+numpy
+pandas
+mysqlclient
+sqlalchemy
